@@ -23,7 +23,7 @@ namespace NetworkB
         private string lobbyId;
         public NetworkServer NetworkServer { get; private set; }
 
-        private const int MaxConnection = 20;
+        private const int MaxConnection = 2;
 
         private const string GameSceneName = "Game";
 
@@ -70,7 +70,7 @@ namespace NetworkB
                 }
             };
 
-                string playerName = PlayerPrefs.GetString(NameSelector.PlayerNameKey, "Unkown");
+                string playerName = PlayerPrefs.GetString(NameSelector.PlayerNameKey, "Unknown");
                 Lobby lobby = await Lobbies.Instance.CreateLobbyAsync($"{playerName}'s Lobby", MaxConnection, lobbyOptions);
                 lobbyId = lobby.Id;
 
