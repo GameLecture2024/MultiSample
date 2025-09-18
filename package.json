@@ -6,6 +6,8 @@
     "unity" : "6000.0",
     "dependencies": {
         "com.unity.multiplayer.playmode" : "1.6.0",
-        "com.unity.netcode.gameobjects" : "2.5.0"
+        "com.unity.netcode.gameobjects" : "2.5.0",
+        "com.unity.services.multiplayer" : "1.1.6",
+        "com.unity.services.lobby" : "1.2.2"
     }
 }
